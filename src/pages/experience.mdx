@@ -1,0 +1,164 @@
+---
+title: Experience
+---
+
+## Binance
+
+### Seeds Trainee Program, Product Manager
+
+#### September 2024 - March 2025
+
+I was selected to be a part of Binance's inaugural Seeds Trainee Program, a rotional program across different departments of the Big Fiat business unit for recent university graduates. The program was designed for trainees to rotate through customer service, growth, business development and product teams on top of managing core responsibilities as a Product Manager for the [P2P trading](https://p2p.binance.com/en) platform.
+
+My primary focus given was to oversee the high-volume P2P trading markets of India, Pakistan and Bangladesh, monitoring key metrics such as new user conversion rates and order cancellations. I also gathered qualitative insights from product feedback sent by users to inform platform improvements. My day to day would include competitive analyses of competitor products and insights derived from new user interviews, alternating between both tasks on a weekly basis. From these analyses, I would then propose new features or possible areas of enhancements for the P2P platform.
+
+Another key part of my responsibilities would also be the new user optimization meetings I hosted weekly with the operations and product teams, a task force focused on identifying areas of improvement for the P2P trading platform in acquiring new users for the India Pakistan and Bangladesh markets. This meeting would begin with a report on weekly metric fluctuations and shifts in trends, followed by an update of actionable items for the week to support any new product enhancements or releases.
+
+#### Notable Contributions
+
+- Optimized P2P trading platform for India, Pakistan, and Bangladesh, boosting view-to-order conversion by 15.2% and view-to-trade by 11.4% through user flow enhancements.
+- Analyzed cancelled order data using Datawind, developing a product roadmap to address identified issues and spearheaded development of a new autoswap payment feature targeting traders causing 25% of cancellations to boost transaction completion conversion rates.
+- Streamlined product feedback process by clearing 200-ticket backlog and led weekly product operations meetings, optimizing systems to cut response time from 2-3 weeks to 3-5 days.
+
+<details>
+  <summary>Skills Practiced @Binance</summary>
+  
+  <details>
+    <summary>Product Roadmapping</summary>
+
+    Designed strategic product roadmaps by identifying key user pain points and
+    prioritizing features. For example, I developed a roadmap for the autoswap
+    payment feature to address transaction cancellations on the P2P trading
+    platform, ensuring alignment with user needs and business goals.
+
+  </details>
+  <details>
+    <summary>User Experience Optimization</summary>
+
+        Enhanced user flows for the P2P trading platform through
+        biweekly competitive analyses of competitor products against Binance's features
+        and new user interviews, recommending optimisations and areas of enhancement
+        through user pain points identified from the studies.
+
+  </details>
+  <details>
+    <summary>Cross-Functional Collaboration</summary>
+
+    Worked across growth, operations and product teams to align on
+    objectives for the India, Pakistan and Bangladesh markets, reporting weekly on
+    product metric updates and what adjustments the team can make to maintain or
+    improve performance of the platform.
+
+  </details>
+  <details>
+    <summary>Project Management Tools</summary>
+
+     Familiarity with JIRA and Confluence for task tracking, documentation, and managing product
+     development workflows, such as deriving a PRD (Product Requirements Document)
+     for the autoswap payment method feature.
+
+  </details>
+  <details>
+    <summary>Product Metric Analysis</summary>
+
+    Monitored and analyzed key performance metrics such as order cancellation and
+    order conversion rates to assess feature impact and guide data-driven
+    decision-making with the operations team.
+
+  </details>
+</details>
+---
+
+## Red Airship Holdings
+
+### Software Engineer Intern
+
+#### May 2023 - April 2024
+
+As part of my [Integrated Work Study Programme (IWSP)](https://www.singaporetech.edu.sg/applied-learning/integrated-work-study-programme), I was given the opportunity to work alongside talented full-stack web developers and product designers to learn how to deliver production ready software. It was a very formative and fruitful year for me, diving deep into React web development in Typescript, and utilising frontend frameworks such as Next.js and Nest.js on the backend.
+
+#### Notable Contributions
+
+- Developed RESTful APIs and an in-house mailer system using Nest.js, TypeORM, and Handlebars.js, implementing the observer/subscriber design pattern on the backend to enable efficient EDM communications for marketing and transaction notifications.
+- Built a web application for city district cooling system planning using React, Next.js, Nest.js, and TypeORM, featuring a multi-step form, role-based access control (RBAC) API, and Python-based data analytics with visualizations, deployed on an AWS EC2 instance for client demos.
+- Optimized and enhanced a testing suite for a system integration project, improving QA processes for a secure access pass issuance machine at a major international airport, collaborating with software providers on face detection, biometric scanning, and NFC card validation, ensuring a successful live demo for key stakeholders.
+
+<details>
+  <summary>Skills Practiced @RedAirship</summary>
+  
+  <details>
+    <summary>React, Typescript, TanStack, Next.js, Axios, Nest.js, TypeORM</summary>
+
+    Utilised as the main tech stack across all the projects I worked on. On the frontend React with TanStack, Next.js and Axios was mainly used for routing, implementing tables and querying data objects defined in interfaces to fetch data from the Nest.js backend API. Nest.js was used to define API controller logic, such as validating if a user is logged into the system or not. From an HTTP request to the Nest.js backend controller through Axios, most controllers implemented would then make a call to a service class where the core business logic of the system is defined, such as processing the logic for a user that is subscribing to a new product plan after they have made payment. This would typically involve multiple data objects where TypeORM's Entity defined classes come in handy, with all data objects easily instantiated in the service classes to fetch database data without any SQL code (for CRUD cases) before returning it to the Nest.js controller and finally to the Next.js frontend server.
+
+  </details>
+  
+  <details>
+    <summary>Python, Flask, Recharts (React)</summary>
+
+    Practiced by developing a separate Flask server to handle asynchronous execution of a Python-based machine learning (ML) algorithm for the city district cooling system planning app. The flask server was deployed on a dedicated web server where it received requests from the Nest.js backend, triggering the ML algorithm to process input data (e.g. district energy consumption) and generate an array of outputs representing the recommended distribution of cooling appliances for a given district. These outputs were then converted to JSON format and sent back via API response to the Nest.js backend, where the JSON would be parsed, stored into the database with TypeORM and made available to the frontend for data visualisation with the Recharts library.
+
+  </details>
+
+  <details>
+    <summary>DevOps: CI/CD Pipeline with Docker, AWS EC2, Git, Nginx and Linux</summary>
+
+    Familiarised with Docker and AWS EC2 to deploy an instance of a city district cooling system planning tool for a client demo. The EC2 instance was managed via SSH with a Linux terminal, where Nginx was configured as a reverse proxy to route traffic to the Next.js app and Flask server ports. PM2 was also used to keep the Next.js server continuously running without downtime. As for Docker, a simple CI/CD script was set up such that new Git pushes to production would build and push new container images to a AWS ECR registry, automatically pulling the new images and restarting the existing containers running the Next.js and Flask servers using docker-compose. This way, new code pushes to production would then automatically update on the client demo instance.
+
+  </details>
+  
+  <details>
+    <summary>RESTful API Design and RBAC</summary>
+
+    Practiced by developing RESTful APIs in Nest.js for the mailer system and city district cooling app, including defining endpoints for EDM communications, transaction notifications, and implementing Role-Based Access Control (RBAC). This involved structuring routes, handling HTTP methods (e.g. GET/POST/PUT), validating inputs, ensuring scalability with TypeORM for data persistence, and defining user roles and permissions via guards or middleware to restrict access (e.g. admin-only views for analytics), thereby securing API endpoints before processing requests or returning data.
+
+  </details>
+
+  <details>
+    <summary>Email Templates with Handlebars.js and the Observer Design Pattern</summary>
+
+    This was actually the first thing I fully owned and worked on as an intern. I practiced this by building the in-house mailer system with Handlebars.js to generate dynamic HTML templates for marketing, subscription orders, transactional emails and more. The contents of the email would be coded in HTML using Handlebars.js used to insert information like user or order details in curly braces `{{}}`. I also had to take note of cross-platform compatibility, where certain CSS styles were not supported in older versions of Internet Explorer or Outlook. Campaign Monitor https://www.campaignmonitor.com/css/ was found to be a great resource for drafting these emails.
+
+    To handle notifications efficiently, the observer design pattern was implemented using the Nest.js Events module for an event-driven architecture. Services like the SubscriptionService class emitted events as publishers e.g., `'user.subscribed'` or `'order.placed'`, while subscriber methods decorated with `@OnEvent()` e.g. `@OnEvent('order.placed')` in the mailer service listened to trigger email sending. This decoupled notification logic from other core business processes, where Handlebars.js email templates could be rendered with event payload data and compiled into HTML, with emails being dispatched via the Nodemailer library as the email provider.
+
+  </details>
+
+  <details>
+    <summary>Testing, QA Optimisation, Drupal and a little Project Management</summary>
+
+    Towards the end of my time at Red Airship, I was thrown into a high-pressure Drupal project where a team of about 8 devs faced a 2-month crunch to meet missed deadlines, stalled by messy Figma designs from the client’s external vendor with vaguely defined component logic.
+
+    To unblock progress, I arranged calls with the vendor and client to clarify and detail component requirements, translating them into clear user stories and reprioritizing tasks to tackle no-blocker items first for async work among devs. For stories with complex dependencies affecting other devs, the engineering manager would step in to assign these complex stories to senior devs first, with senior devs handling the code review of the stories affected and implemented by other devs.
+
+    Once features were implemented, I conducted QA by testing them against acceptance criteria for accuracy, debugging any module conflicts or rendering errors. As a team, these efforts boosted our sprint velocity from 75 to 140 points per sprint, almost double the velocity. I was proud to be a part of this moment, as it ultimately stabilised the key deliverables for the project handed over to the client.
+
+  </details>
+  
+  <details>
+    <summary>Agile Methodology and Cross Functional Collaboration</summary>
+
+    I practiced the Agile methodology by working closely with product designers especially in the early phases of projects to translate client requirements into user stories. These user stories would then be prioritized during sprint planning meetings, where I would be assigned development tasks in each sprint.
+
+    Development in each sprint would typically involve creating a new feature branch for me to start coding, followed by submitting a merge request on Git for a senior engineer to conduct a code review. This was where most of the learning would take place, where I would correct any errors in coding logic or ensure adherence to best coding practices.
+
+    After resolution of all merge request comments, the senior engineer would then merge my feature branch into the dev branch. This always leaves me with a real sense of satisfaction everytime, knowing my implementation is production-ready. Features implemented would then typically be demoed in sprint reviews for feedback, driving continuous improvement each sprint.
+
+  </details>
+
+</details>
+
+# Other Relevant Experience
+
+## Monad Foundation
+
+### Volunteer Local Community Developer
+
+#### March 2024 - September 2024
+
+My first experience in a community role in Web3, I decided to volunteer myself for this role as I saw an opportunity to grow the local Singapore and Malaysian community for the Monad Foundation and contibute to the Monad Community. I first reached out to [Bill Monday](https://x.com/billmondays) with a proposal to jumpstart a merged Singapore and Malaysian local community, and things just took off from there. I had a lot of fun spearheading the growth of the local community and also organising live events for them, with one of the highlights being a [Monad 101 event](https://lu.ma/40vesoj5) organised during [TOKEN2049 in Singapore](https://x.com/jacobkxyz/status/1836294530917896644).
+
+#### Notable Contributions
+
+- Led community programs in Singapore and Malaysia, serving as the main point of contact for the Monad Foundation to interact with the local community through live events.
+- Served as event organizer for Monad 101 in Singapore, a builder-focused meetup that was hosted during TOKEN2049 that experienced fourfold oversubscription for a 100-pax venue, featuring a program with a panel including Monad's founders, a builders' section on building on the Monad L1, and guidance on leveling up web3 skills via RareSkills.io, a web3 education platform.
+- Grew 500+ member Telegram/Discord community, establishing processes to track community contributions and a events planning framework for organising future community run events.

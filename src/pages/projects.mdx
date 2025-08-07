@@ -1,0 +1,127 @@
+---
+title: Projects
+---
+
+import SpaceShooter from "/src/assets/space-shooter.gif";
+import CovidTracerDemo from "/src/assets/covid-tracer-1.gif";
+import CovidTracerDB from "/src/assets/covid-tracer-2.jpg";
+
+A section covering other projects I've worked on outside of my professional responsibilities, along with the lessons I've learnt from them.
+
+<details>
+  <summary>Python Merkle Trees</summary>
+
+**Description:** I dove into blockchain tech with a personal project, building a Merkle Tree in Python to understand its role in securing transaction data. Using Jupyter Notebook, I implemented a `MerkleTree` class that takes a list of transactions, hashes them with SHA-256, and constructs a binary tree to compute the Merkle root for integrity checks. The repository is also available on my [GitHub](https://github.com/adamdotmon/python-merkle-tree).
+
+**Role:** Developer
+
+**Skills Practiced:**
+
+- Python, Jupyter Notebook: Coded each functionality of the Merkle Tree in Jupyter Notebook to visualise and understand the tree structure and how transactions are hashed with nonces. The Merkle Tree class included methods for adding transactions, generating and verifying merkle proofs, as well as displaying the tree structure in a readable format.
+- Cryptography: Implemented the SHA-256 hashing algorithm to hash the transactions and calculate the Merkle root.
+
+**Learnings:**
+
+- Learned how Merkle Trees are efficient for scalable data verification and how to balance trees by duplicating nodes at any level with odd counts, ensuring a balanced binary tree structure for calculating and verifying Merkle proofs.
+
+</details>
+
+<details>
+  <summary>Social Media Data Analytics towards Healthcare Workers</summary>
+
+**Description:** A research project under the supervision of [Professor Wang Zhengkui](https://www.singaporetech.edu.sg/directory/faculty/daniel-zhengkui-wang) from Singapore Institute of Technology and [Dr. Vivien Wen Shan](https://www.suss.edu.sg/academics/schools-college/faculty-listing/detail/vivien-shan-wen) from Singapore University of Social Sciences. The project involved analysing social media data to understand the sentiments and opinions of healthcare workers towards campaigns and poliicies related to COVID-19.
+
+**Role:** Research Assistant and Contributor, responsible for Twitter data scraping, cleaning, and sentiment analysis.
+
+**Skills Practiced:**
+
+- Python, Pandas and NLP: Developed scripts to scrape Twitter data using the Tweepy library, cleaning and preprocessing the data using Pandas, and performing sentiment analysis using deep learning models [BERT](https://huggingface.co/docs/transformers/en/model_doc/bert) and [RoBERTa](https://huggingface.co/docs/transformers/en/model_doc/roberta) for sentiment analysis of tweets. This involved tokenization, removal of stop words and lemmatization to prepare the data for analysis, rating tweets on a scale of 1 (very negative) to 5 (very positive) based on the sentiment expressed in tweets.
+
+**Results:**
+
+- Listed as a contributor in the research paper presented at the IACM 2023 conference, titled [Conflicting Voices of Campaigns For Healthcare Workers During Covid-19: Positive Or Negative Depends On Culture](https://iafcm.org/2023/modules/request.php?module=oc_program&action=summary.php&id=74)
+
+</details>
+
+<details>
+  <summary>COVID Tracer</summary>
+
+**Description:** A team project for [ICT2103 Information Management](https://www.singaporetech.edu.sg/modules/information-management), where the team was given free reign to create any app with a SQL and NoSQL backend based on data from [Singapore's government data portal](https://data.gov.sg/). The app featured a simple web interface that allowed users to manage citizen profiles, managing their location history, health status and vaccination status. The app also included a feature to detect potential COVID-19 clusters based on citizen location history and infection data. The dataset used was based on a citizen dummy dataset. The respository is also available on my [Github](https://github.com/adamdotmon/2103-covid-tracer-demo).
+
+**Role:** Full-stack developer, focusing on the cluster detection feature and citizen location history management.
+
+**Skills Practiced:**
+
+- Javascript, Node.js, Express.js, MySQL and MongoDB: Developed the backend using Node.js and Express.js, implementing RESTful APIs to handle CRUD operations in both MySQL and MongoDB for citizen location history, health status and vaccination status.
+- CQL (Cypher Query Language): I implemented a graph database using Neo4j which was mapped to the MongoDB JSON schema to store and query citizen location history and infection data. This allowed for efficient querying of potential COVID-19 clusters based on proximity and frequency of visits to the same locations.
+
+**Results:** Achieved A+ for the module.
+
+Neo4j Graph Database schema:
+
+<img src={CovidTracerDB} alt="Neo4j Database" width="540" />
+**Demo:**
+
+<img src={CovidTracerDemo} alt="Covid Tracer GIF" width="540" />
+
+</details>
+
+<details>
+  <summary>Robokaar</summary>
+
+**Description:** A combined team project for modules [ICT2101 Introduction to Software Engineering](https://www.singaporetech.edu.sg/modules/introduction-software-engineering-0) and [ICT2104 Embedded Systems Programming](https://www.singaporetech.edu.sg/modules/embedded-systems-programming). The project involved creating a web portal to teach kids aged between 7 to 12 years old about robotics and programming. The web portal allows users to control a robot car through a web interface, teaching users about concepts such as sequential and critical thinking in solving problems.
+
+**Role**: Main developer for the robot car controller system, which involved programming the robot car and its peripherals to be controlled through the web portal.
+
+**Skills Practiced:**
+
+- C and Assembly: I got hands-on with the MSP432 microcontroller, implementing code in C and Assembly to control the robot car's motors via PWM, along with ultrasonic sensors to measure distance between objects and peripherals like a Wi-Fi module to communicate with the web portal, learning to manage low-level hardware interactions.
+- Python and Flask: I set up a RESTful API with Flask to communicate with the robot car, which used an ESP-01S Wi-Fi module to join the same network and receive HTTP instructions. These were relayed to the MSP432 via UART, mapping inputs to predefined commands for peripheral execution, teaching me how to bridge server and embedded systems.
+
+</details>
+
+<details>
+  <summary>Space Shooter</summary>
+
+**Description:** Team project component for [ICT1009 Object Oriented Programming](https://www.singaporetech.edu.sg/modules/object-oriented-programming-0). A simple rework of the classic Space Invaders game, but built from scratch twice (also no aliens). Once in C++ and another in Java with the SFML and libGDX library respectively. The game features a player-controlled ship that can move left and right, shooting at descending alien invaders. The goal is to destroy all the aliens before they reach the bottom of the screen.
+
+**Role:** Implemented the health bar and collision logic for the between the player's ship, bullets fired, and the enemy ship sprites.
+
+**Skills Practiced:**
+
+- C++ pointers and memory management
+- basic Java programming
+- Object-Oriented Programming (OOP): Learnt about entity classes, inheritance, and polymorphism by creating a base class for game entities and deriving specific classes for the player, aliens, and bullets. This included implementing an interface for collidable objects to define a bounding box for collision detection between rendered sprites when they overlap.
+- Game Development: Gained experience in game loop design, event handling, and rendering graphics using the SFML and libGDX libraries.
+- Collision Detection: Implemented basic collision detection logic to determine when bullets hit enemy spaceships and when the player ship is hit by enemy bullets.
+
+**Demo:**
+
+<img src={SpaceShooter} alt="Space Shooter GIF" width="300" />
+
+</details>
+
+<details>
+  <summary>Improved Round Robin Scheduling Algorithm</summary>
+
+**Description**: An team project component for [ICT1007 Operating Systems](https://www.singaporetech.edu.sg/modules/operating-systems), where the team was tasked with implementing various process scheduling algorithms and conduct a study on what were the best types of process scheduling algorithms among them. I was assigned with developing a Improved Round Robin Scheduling Algorithm with Varying Time Quantum (IRRVTQ) based on [this paper by Simpa Labs](https://ieeexplore.ieee.org/document/9296452).
+
+**Implementation Steps:**
+
+- Calculated the median burst time of processes in the queue to dynamically set the time quantum.
+- Split the queue into light (burst times ≤ median) and heavy (burst times > median) sub-queues.
+- Applied traditional Round Robin scheduling first to the light queue, then to the heavy queue.
+- Recalculated the median whenever a new process arrived, re-splitting queues after execution of the heavy queue.
+
+**Results:**
+
+- IRRVTQ outperformed standard Round Robin by lowering average waiting and turnaround time in tested scenarios.
+- However, it had a limitation: short-burst processes arriving during heavy queue execution were delayed until the heavy queue finished execution. Due to the nature of the algorithm's design, queue execution still maintained a non-preempetive aspect, which meant that processes in the heavy queue would not be interrupted until they compeleted their exeuction, potentially leading to increased waiting time for short-burst processes.
+
+**Role:** C Developer
+
+**Skills Practiced:**
+
+- C programming. Learnt how to implement the scheduling algorithm in a modular and maintainable way, allowing for easy adjustments to the algorithm. Also familiarised myself with pointers and memory management through the project.
+
+</details>
