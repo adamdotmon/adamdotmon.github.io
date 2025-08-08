@@ -12,6 +12,7 @@ interface TimelineItemProps {
   period: string;
   description: string;
   bullets: string[];
+  isFirst?: boolean;
   isLast?: boolean;
 }
 
@@ -21,13 +22,23 @@ const TimelineItem: React.FC<TimelineItemProps> = ({
   period,
   description,
   bullets,
+  isFirst = false,
   isLast = false,
 }) => {
   return (
     <div className={styles.timelineItem}>
       <div className={styles.timelineMarker}>
-        <div className={styles.timelineDot}></div>
-        {!isLast && <div className={styles.timelineLine}></div>}
+        <div
+          className={
+            isFirst ? styles.firstOrLastTimelineLine : styles.timelineLine
+          }
+        />
+        <div className={styles.timelineDot} />
+        <div
+          className={
+            isLast ? styles.firstOrLastTimelineLine : styles.timelineLine
+          }
+        />
       </div>
       <div className={styles.timelineContent}>
         <h3 className={styles.timelineTitle}>{title}</h3>
@@ -180,6 +191,7 @@ const ExperienceSection: React.FC = () => {
               period={exp.period}
               description={exp.description}
               bullets={exp.bullets}
+              isFirst={index === 0}
               isLast={index === experiences.length - 1}
             />
           ))}
