@@ -1,6 +1,7 @@
 # My Portfolio
 
 This website is built using [Docusaurus](https://docusaurus.io/), a modern static website generator.
+Checkout my personal portfolio at [adamdotmon.github.io](https://adamdotmon.github.io/)
 
 ## Installation
 
