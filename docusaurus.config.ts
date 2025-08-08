@@ -73,9 +73,9 @@ const config: Config = {
     // Replace with your project's social card
     image: "img/docusaurus-social-card.jpg",
     navbar: {
-      title: "Adam'\s Portfolio",
+      title: "Adam's Portfolio",
       logo: {
-        alt: "My Site Logo",
+        alt: "Adam's Portfolio Logo",
         src: "img/logo.svg",
       },
       items: [
@@ -136,6 +136,11 @@ const config: Config = {
     prism: {
       theme: prismThemes.github,
       darkTheme: prismThemes.dracula,
+    },
+    colorMode: {
+      defaultMode: "dark",
+      disableSwitch: false,
+      respectPrefersColorScheme: false,
     },
   } satisfies Preset.ThemeConfig,
 };
